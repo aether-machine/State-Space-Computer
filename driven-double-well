@@ -1,4 +1,4 @@
-##Driven Double-Well Circuit for Audio-Rate Analog Synthesis
+#Driven Double-Well Circuit for Audio-Rate Analog Synthesis
 
 This project explores audio-rate analog synthesis by directly implementing a nonlinear dynamical system in hardware.
 
@@ -10,7 +10,9 @@ Governing equation
 
 A normalized form of the system is:
 
-$$x^{\prime\prime} + b x^\prime - x + x^3 = E(t)$$
+$$
+x^{\prime\prime} + b x^\prime - x + x^3 = E(t)
+$$
 
 where:
 
