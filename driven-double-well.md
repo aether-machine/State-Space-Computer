@@ -10,9 +10,7 @@ Governing equation
 
 A normalized form of the system is:
 
-$$
-x^{\prime\prime} + b x^\prime - x + x^3 = E(t)
-$$
+$$x^{\prime\prime} + b x^\prime - x + x^3 = E(t)$$
 
 where:
 
