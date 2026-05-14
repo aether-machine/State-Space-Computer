@@ -1,4 +1,4 @@
-#Driven Double-Well Circuit for Audio-Rate Analog Synthesis
+# Driven Double-Well Circuit for Audio-Rate Analog Synthesis
 
 This project explores audio-rate analog synthesis by directly implementing a nonlinear dynamical system in hardware.
 
