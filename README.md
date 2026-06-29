@@ -1,6 +1,5 @@
-This repository started it's life as the Oscilloplasm module which existed for a brief time in the Wiard 300 Series format, and has now expanded into a complete and separate take on the audio synthesis paradigm based on quantum accurate continuous computing techniques.
+This repository started it's life as the Oscilloplasm module which existed for a brief time in the Wiard 300 Series format, and has now expanded into a complete and separate take on the audio synthesis paradigm based on quantum accurate continuous computing techniques. For non-commercial use only, e.g. education, DIY.
 
-Almost complete schematics for complex dual analog oscillator in tradition of Buchla 258/259 with redesign from first principles for the digital age. For non-commercial use only, e.g. education, DIY.
 Modulation oscillator is a self stablizing sine wave based around a trig identity for instant in the loop gain correction. Basic sine wave (harmonic oscillator) equation is:
 
 $$
