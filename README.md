@@ -4,11 +4,13 @@ The place to begin is the representation of physical phenomena as periodic infor
 
 The first commercially available synthesizers referenced these mathematical principles directly, but between the reverence for analog computing methods for aesthetic reasons only, and the advent of the general purpose digital computer, the capability for continuous computing (analog) techniques to solve the most complex mathematical problems has been forgotten. Setting aside the practical problem of solving these equations for a moment, it is also worth noting that this extended class of analog computing methods needs to be explored and redefined, because it is a movement directly away from the conventional structure of sound source, sound shaper, and instead sees the instrument as a dynamical system composed of states, forces, nonlinearities, and observations.
 
-Modulation oscillator is a self stablizing sine wave based around a trig identity for instant in the loop gain correction. Basic sine wave (harmonic oscillator) equation is:
+The primitive in analog computing is the state variable,
 
 $$
 \frac{d^2x}{dt^2} + \omega^2 x = 0
 $$
+
+Modulation oscillator is a self stablizing sine wave based around a trig identity for instant in the loop gain correction. Basic sine wave (harmonic oscillator) equation is:
 
 Where the second differential x'' (with respect to time) is passed through two voltage controlled integrators, and the inversion of the x output connected to the input to solve.  Here, ω = 2πf which is the angular frequency of the sine wave.
 
