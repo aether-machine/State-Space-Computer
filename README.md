@@ -4,23 +4,21 @@ The place to begin is the representation of physical phenomena as periodic infor
 
 The first commercially available synthesizers referenced these mathematical principles directly, but between the reverence for analog computing methods for aesthetic reasons only, and the advent of the general purpose digital computer, the capability for continuous computing (analog) techniques to solve the most complex mathematical problems has been forgotten. Setting aside the practical problem of solving these equations for a moment, it is also worth noting that this extended class of analog computing methods needs to be explored and redefined, because it is a movement directly away from the conventional structure of sound source, sound shaper, and instead sees the instrument as a dynamical system composed of states, forces, nonlinearities, and observations.
 
-The primitive in analog computing is the state variable,
+The primitive in analog computing is the state variable, which appears in both the harmonic oscillator (sine wave) and the multimode filter. Mathematically:
 
 $$
-\frac{d^2x}{dt^2} + \omega^2 x = 0
+\frac{d^2x}{dt^2} + \omega^2 x = F(t)
 $$
 
-Modulation oscillator is a self stablizing sine wave based around a trig identity for instant in the loop gain correction. Basic sine wave (harmonic oscillator) equation is:
+To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable input gain opamp and a capacitor as a memory devie, the inversion of the x output is connected to the input to solve.  Here, ω = 2πf which is the angular frequency of the sine wave.
 
-Where the second differential x'' (with respect to time) is passed through two voltage controlled integrators, and the inversion of the x output connected to the input to solve.  Here, ω = 2πf which is the angular frequency of the sine wave.
-
-The trig identity used is:
+The harmonic oscillator circuit here is unique to the system, a self stablizing sine wave based around a trig identity for instant in the loop gain correction:
 
 $$
 sin^2 + cos^2 - 1 = 0
 $$
 
-Which generates a real time error value, and out of phase sinusoidal outputs of the second harmonic. The complete equation with stabilization is:
+Using two Gilbert Cell mulitpliers and a zener diode stabilized DC reference, this generates a real time error value which can be used to modulate the oscillator loop gain and maintain long term amplitude stability, as well as two second harmonic outputs for the sine and cosine portions of the waveform. The complete equation with stabilization is:
 
 $$ \lambda^2 - 2k \epsilon \lambda + (\omega^2 + k^2 \epsilon^2) = 0 $$
 
