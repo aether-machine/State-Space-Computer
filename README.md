@@ -1,4 +1,4 @@
-This repository started it's life as the Oscilloplasm module which existed for a brief time in the Wiard 300 Series format, and has now expanded into a complete and separate take on the audio synthesis paradigm based on continuous computing techniques that occur in the physical and non-physical domains. Here, we present both a general method to solve computing problems using electronic means, and ready made solutions to build and install yourself. The licensing is strictly for non-commercial use only, e.g. education, DIY.
+This repository began it's life as the Oscilloplasm module which existed for a brief time in the Wiard 300 Series format, and has now expanded into a complete and separate take on the audio synthesis paradigm based on continuous computing techniques that occur in the physical and non-physical domains. Here, we present both a general method to solve computing problems using electronic means, and ready made solutions to build and install yourself. The licensing is strictly for non-commercial use only, e.g. education, DIY.
 
 The place to begin is the representation of physical phenomena as periodic information, starting in two dimensions as sound waves and following through into three dimensional particles as persistant standing wave patterns that make up our physical universe. This representation can be done in maths using differential equations, from simple linear ordinary differential equations (ODEs) that describe electron shell configurations, into complex non-linear partial differential equations (PDEs) that can describe motion in a body of water, likely with multiple flow velocities and different viscosities. At the most extreme form, a single equation might be able to describe the entire universe, for example reaction-diffusion equations can give rise to cell like growth.
 
@@ -10,7 +10,7 @@ $$
 \frac{d^2x}{dt^2} + \omega^2 x = F(t)
 $$
 
-Where, ω = 2πf is the angular frequency of the sine wave. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable input gain opamp and a capacitor as a memory device, with the inversion of the x output is connected to the input to solve.  
+Where, ω = 2πf is the angular frequency of the sine wave. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable transconductance stage, an opamp and a capacitor as a continuous memory device, with the inversion of the x output is connected to the input to solve.  
 
 The harmonic oscillator circuit here is unique to the system, a self stablizing sine wave based around a trig identity for instant in the loop gain correction:
 
