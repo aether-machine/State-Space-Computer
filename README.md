@@ -10,7 +10,7 @@ $$
 \frac{d^2x}{dt^2} + \omega^2 x = F(t)
 $$
 
-To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable input gain opamp and a capacitor as a memory devie, the inversion of the x output is connected to the input to solve.  Here, ω = 2πf which is the angular frequency of the sine wave.
+Where, ω = 2πf is the angular frequency of the sine wave. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable input gain opamp and a capacitor as a memory device, with the inversion of the x output is connected to the input to solve.  
 
 The harmonic oscillator circuit here is unique to the system, a self stablizing sine wave based around a trig identity for instant in the loop gain correction:
 
