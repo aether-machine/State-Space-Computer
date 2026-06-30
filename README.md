@@ -2,7 +2,7 @@ This repository began it's life as the Oscilloplasm module which existed for a b
 
 The place to begin is the representation of physical phenomena as periodic information, starting in two dimensions as sound waves and following through into three dimensional particles as persistant standing wave patterns that make up our physical universe. This representation can be done in maths using differential equations, from simple linear ordinary differential equations (ODEs) that describe electron shell configurations, into complex non-linear partial differential equations (PDEs) that can describe motion in a body of water, likely with multiple flow velocities and different viscosities. At the most extreme form, a single equation might be able to describe the entire universe, for example reaction-diffusion equations can give rise to cell like growth.
 
-The primitive in analog computing is the state variable, which appears in both the harmonic oscillator (sine wave) and the multimode filter. Mathematically:
+The primitive in analog computing is the state variable equation, which appears in both the harmonic oscillator (sine wave) and the multimode filter. Mathematically:
 
 $$
 \frac{d^2x}{dt^2} + \omega^2 x = F(t)
