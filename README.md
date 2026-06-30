@@ -18,7 +18,12 @@ $$
 
 Using two Gilbert Cell mulitpliers and a zener diode stabilized DC reference, this generates a real time error value which can be used to modulate the oscillator loop gain and maintain long term amplitude stability, as well as two second harmonic outputs for the sine and cosine portions of the waveform. The complete equation with stabilization is:
 
-$$ \lambda^2 - 2k \epsilon \lambda + (\omega^2 + k^2 \epsilon^2) = 0 $$
+$$ \[
+\frac{d^2 x}{dt^2}
++ 2k\epsilon \frac{dx}{dt}
++ \left(\omega^2 + k^2\epsilon^2\right)x
+= 0
+\] $$
 
 
 Output oscillator is a variable harmonic wavetable that solves Legendre's Ordinary Differential Equation in real time:
