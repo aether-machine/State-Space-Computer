@@ -5,10 +5,10 @@ The place to begin is the representation of physical phenomena as periodic infor
 The primitive in analog computing is the state variable, which appears in both the harmonic oscillator (sine wave) and the multimode filter. Mathematically:
 
 $$
-\frac{d^2x}{dt^2} + \omega^2 x = F(t)
+\frac{d^2x}{dt^2} + 2\gamma \frac{dx}{dt} + \omega^2 x = F(t)
 $$
 
-Where, ω = 2πf is the angular frequency of the sine wave. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable transconductance stage, an opamp and a capacitor as a continuous memory device, with the inversion of the x output is connected to the input to solve. This is the general form of solving ODEs using electronic means, to re-arrange in terms of the highest order derivative, assume that it exists, and then solve by parts. More on this later.
+Where, ω = 2πf is the angular frequency of the sine wave and the first integral controls damping or growth. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, comprised of a variable transconductance stage, an opamp and a capacitor as a continuous memory device, with the inversion of the x output is connected to the input to solve. This is the general form of solving ODEs using electronic means, to re-arrange in terms of the highest order derivative, assume that it exists, and then solve by parts. More on this later.
 
 The harmonic oscillator circuit here is unique to the system, a self stablizing sine wave based around a trig identity for instant in the loop gain correction:
 
