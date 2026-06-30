@@ -8,7 +8,7 @@ $$
 \frac{d^2x}{dt^2} + 2\gamma \frac{dx}{dt} + \omega^2 x = F(t)
 $$
 
-Where ω = 2πf is the angular frequency of the sine wave and the first derivative x' controls damping or growth. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, each comprised of a variable transconductance stage, an opamp and a capacitor as a memory cell, with the inversion of the x output connected to the input to solve. This is the general form of solving ODEs using electronic means, to re-arrange in terms of the lowest order derivative, assume that it exists, and then solve by parts using cascaded integrator stages, the final integrator stage then represents the solution and this is used as the input.
+Where ω = 2πf is the angular frequency of the sine wave and the first derivative x' controls damping or growth. To solve in analog form, the second differential x'' (with respect to time) is passed through two voltage controlled integrators, each comprised of a variable transconductance stage, an opamp and a capacitor as a memory cell, with the inversion of the x output connected to the input to solve. This is the general form of solving ODEs using electronic means, to re-arrange in terms of the lowest order derivative, assume that it exists, and then solve by parts using cascaded integrator stages, the final integrator stage then represents the solution and this is used as the input to complete the cycle.
 
 The harmonic oscillator circuit here is unique to the system, a self stablizing sine wave based around a trig identity for instant in the loop gain correction:
 
